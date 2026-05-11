@@ -1,8 +1,11 @@
+import os
+os.environ["STREAMLIT_SERVER_ENABLE_CORS"] = "false"
+os.environ["STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION"] = "false"
+
 import streamlit as st
-import cv2
 import mediapipe as mp
+import cv2
 import numpy as np
-from PIL import Image
 
 # Umax 2.0 Branding
 st.set_page_config(page_title="UMAX 2.0", page_icon="💎")
